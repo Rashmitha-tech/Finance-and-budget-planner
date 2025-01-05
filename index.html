@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance & Budget Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Finance & Budget Planner</h1>
+        </header>
+
+        <section class="budget-input">
+            <h2>Income & Expense Input</h2>
+            <label for="income">Monthly Income:</label>
+            <input type="number" id="income" placeholder="Enter income">
+
+            <label for="expense">Expense Description:</label>
+            <input type="text" id="expenseDescription" placeholder="Expense description">
+
+            <label for="expenseAmount">Amount:</label>
+            <input type="number" id="expenseAmount" placeholder="Expense amount">
+
+            <button id="addExpense">Add Expense</button>
+        </section>
+
+        <section class="budget-summary">
+            <h2>Budget Summary</h2>
+            <div>
+                <p><strong>Total Income:</strong> <span id="totalIncome">0</span></p>
+                <p><strong>Total Expenses:</strong> <span id="totalExpenses">0</span></p>
+                <p><strong>Remaining Budget:</strong> <span id="remainingBudget">0</span></p>
+            </div>
+        </section>
+
+        <section class="expense-list">
+            <h2>Expense List</h2>
+            <ul id="expenseList"></ul>
+        </section>
+
+        <footer>
+            <p>Created by Your Name</p>
+        </footer>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
